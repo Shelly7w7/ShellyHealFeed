@@ -1,0 +1,14 @@
+name: ShellyHealFeed
+main: ShellyHealFeed\Main
+author: Shelly7w7
+version: 0.1
+api: [3.0.0-ALPHA10, 3.0.0-ALPHA11, 3.0.0-ALPHA12]
+
+commands:
+ heal:
+  description: "Heal YourSelf!"
+  permission: shellyheal.command
+  
+ feed:
+  description: "Feed YourSelf!" 
+  permission: shellyfeed.command
