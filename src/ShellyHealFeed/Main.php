@@ -5,17 +5,16 @@ namespace ShellyHealFeed;
 use pocketmine\Server;
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
-
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 
 class Main extends PluginBase{
 
     public function onEnable(){
+	$this->getLogger()->Info("ShellyHeal has been has been enabled.");
     }
 
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {
-
         switch($cmd->getName()){
 
             case "heal":
@@ -41,9 +40,7 @@ class Main extends PluginBase{
             break;
 
         }
-
         return true;
-
     }
 
 }
